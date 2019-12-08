@@ -21,13 +21,13 @@
     <body>
         
         <div id="main_container">
-            <div id="header_container">
+            <div id="logo_bar">
                     <center>
                         <a href="https://www.facebook.com/PGRacingTeam/" target="_blank"><img src="../images/logo/PGRacingTeamLogo.png" width="6%" height="6%" class="photo_resize" /></a>
                     </center>
             </div> 
             <div id="navigation_bar_container">
-                <div id="navigation_bar">
+                <div class="navigation_bar">
                     <div class="nav_bar_option"><a href="https://www.facebook.com/PGRacingTeam/" target="_blank">O nas</a></div>
                     <div class="nav_bar_option"><a href="https://www.facebook.com/PGRacingTeam/" target="_blank">Bolidy</a></div>
                     <div class="nav_bar_option"> Partnerzy</div>
@@ -38,6 +38,9 @@
             </div>
             <div id="Team">
                 <div class="dividing_bar">O NAS</div>
+            </div>
+            <div id="Team">
+                <div class="dividing_bar">ZAWODY</div>
             </div>
             <div id="contacts_container">
                 <div class="dividing_bar">
@@ -71,12 +74,39 @@
                 </center>
                 <div class="dividing_bar"></div>
             </div>
-            
+            <div id="logo_bar">
+                <center>
+                    <a href="https://www.facebook.com/PGRacingTeam/" target="_blank"><img src="../images/logo/PGRacingTeamLogo.png" width="6%" height="6%" class="photo_resize" /></a>
+                </center>
+            </div> 
 
         </div>
 
     
+        <script src="../JSS files/jquery-3.4.1.min.js"></script>
+        <script>
 
+            $(document).ready(function() {
+            var stickyNavTop = $('.navigation_bar').offset().top;
+            
+            var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
+            
+            if (scrollTop > stickyNavTop) {
+            $('.navigation_bar').addClass('sticky');
+            } else {
+            $('.navigation_bar').removeClass('sticky');
+            }
+            };
+            
+            stickyNav();
+            
+            $(window).scroll(function() {
+            stickyNav();
+            });
+            });
+            
+            </script>
 
     </body>
 

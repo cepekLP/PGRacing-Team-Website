@@ -9,6 +9,14 @@
     transform: scale(1.2);
 }
 
+.navigation_bar{
+    height: 60px;
+    opacity: 50%;
+    border-bottom-width: 5px;
+    border-bottom: rgb(255, 106, 0);
+    background-color: black;
+}
+
 .nav_bar_option{
     height: 100%;
     width: 20%;
@@ -64,7 +72,7 @@
     border-bottom-width: 3px;
     width: 100%;
     height: 60px;
-    opacity: 85%;
+    opacity: 75%;
 
     line-height: 60px;
     vertical-align: middle;
@@ -81,5 +89,12 @@
     opacity: 100%;
 }
 
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
 
 
