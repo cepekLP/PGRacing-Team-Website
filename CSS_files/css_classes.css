@@ -9,6 +9,8 @@
     transform: scale(1.2);
 }
 
+
+/* ------------------------------ NAV BAR ------------------------------ */
 .navigation_bar{
     height: 60px;
     opacity: 50%;
@@ -36,11 +38,20 @@
     color: rgb(255, 106, 0);
 }
 
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+/* ------------------------------ CONTACT ------------------------------ */
 .contact_person{
     width: 33%;
     float: left;
     font-family: 'bulletproof';
-    color: rgb(205, 17, 5);
+    color: white;
     font-size: 25px;
     padding-top: 25px;
 }
@@ -64,16 +75,16 @@
     opacity: 100%;
     visibility: visible;
 }
-
-
+/* ------------------------------ DIVIDING BAR ------------------------------ */
 .dividing_bar{
     float: left;
     background-color: black;
-    border-bottom-width: 3px;
+    border-color: chocolate;
     width: 100%;
     height: 60px;
     opacity: 75%;
 
+    padding-top: 5px;
     line-height: 60px;
     vertical-align: middle;
     font-family: 'bulletproof';
@@ -81,20 +92,63 @@
     text-align: center;
     color: white;
     
-    transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: background-color 0.9s ease-in-out, opacity 0.9s ease-in-out;
 
 }
 .dividing_bar:hover{
     background-color: black;
-    opacity: 100%;
+    opacity: 90%;
 }
 
-.sticky{
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
+/* ------------------------------ CONTENT DIV ------------------------------ */
+.content_div{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
 }
+
+.temp{
+    width: 70%;
+    height: auto;
+    font-family: 'Exninja';
+    text-align: justify;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 5%;
+    background-color: black;
+    opacity: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+
+    transition: opacity 0.9s ease-in-out;
+}
+.temp:hover{
+    opacity: 85%;
+}
+
+.photo_div{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background-image: url("../images/gallery/IMG_7224-1.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    width: 50%;
+    height: 100%;
+}
+
 
 
