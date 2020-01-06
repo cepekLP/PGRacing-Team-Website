@@ -1,0 +1,308 @@
+@font-face{
+    font-family: 'bulletproof';
+    src: url("../fonts/BulletproofBB.ttf");
+}
+
+@font-face{
+    font-family: 'Exninja';
+    src: url("../fonts/Exninja.otf");
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+a, a:visited, a:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* ------------------------------ LOGO BAR ------------------------------ */
+.logo_bar{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(233, 84, 13);
+    color: white;
+    background-color: black;
+}
+.logo_bar img{
+    height: 100%;
+}
+.start_img{
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-height: 840px;
+}
+.start_img video {
+    position: relative;
+    width: 100%;
+}
+.start_img img{
+    width: 100%;
+}
+
+
+/* ------------------------------ NAV BAR ------------------------------ */
+.navigation_bar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    opacity: 50%;
+    background-color: black;
+}
+
+.nav_bar_option{
+    height: 100%;
+    width: 19.5%;
+    float: left;
+
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'bulletproof';
+    font-size: 30px;
+    color: white;
+
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav_bar_option:hover{
+    transform: scale(1.2);
+    color:rgb(233, 84, 13);
+}
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+/* ------------------------------ DIVIDING BAR ------------------------------ */
+.dividing_bar{
+    float: left;
+    background-color: black;
+    border-color: rgb(233, 84, 13);
+    width: 100%;
+    height: 58px;
+    opacity: 55%;
+    line-height: 60px;
+    vertical-align: middle;
+    font-family: 'bulletproof';
+    font-size: 50px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(233, 84, 13);
+    color: white;
+    
+    transition: background-color 0.9s ease-in-out, opacity 0.9s ease-in-out;
+}
+.dividing_bar:hover{
+    background-color: black;
+    opacity: 95%;
+}
+
+.dividing_bar img{
+    height: 40px;
+    width: auto;
+    opacity: 1;
+}
+
+#maserati_divider{
+    min-height: 398px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/gallery/IMG_6136-1.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pg_pit_divider{
+    min-height: 298px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/background/background1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------ CONTACT ------------------------------ */
+.contact_person{
+    text-align: center;
+    font-family: 'bulletproof';
+    color: white;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.contact_photo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_photo:hover{
+    height: 230px;
+    width: 230px;
+}
+.text-cover{
+    opacity: 20%;
+	transition: all 0.5s ease-in-out;
+}
+.contact_person:hover .text-cover{
+    opacity: 100%;
+    color: rgb(233, 84, 13);
+    visibility: visible;
+}
+.contact_container{
+    min-height: 500px;
+    background-color: black;
+    background-image: url("../images/gallery/bolid_1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ------------------------------ ABOUT US ------------------------------ */
+.about_us_container{
+    min-height: 300px;
+    background-color: black;
+    text-align: center;
+}
+
+.about_us_photo_container{
+    width: 100%;   
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.about_us_text_container{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.about_us_text_container p{
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: Exninja;
+    transition: all 0.5s ease-in-out;
+}
+.about_us_header{
+    color: rgb(233, 84, 13);
+    text-align: center;
+    font-size: auto;
+    font-family: 'bulletproof';
+}
+
+.num_of_bolids{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Exninja';
+}
+
+.num_of_bolids h2{
+    color: white;
+    font-size: 80px;
+}
+.num_of_bolids img{
+    width: 24%;
+    height: auto;
+}
+
+.num_of_people{
+    text-align: center;
+    font-family: 'Exninja';
+}
+
+.num_of_people h2{
+    color: white;
+    font-size: 80px;
+}
+.num_of_people img{
+    width: 10%;
+    height: auto;
+}
+
+/* ------------------------------ TOURNAMENT ------------------------------ */
+.tournament_container{
+    opacity: 1;
+    min-height: 600px;
+    background-color: white;
+    text-align: center;
+}
+
+.tournament_photo_container{
+    width: 100%;   
+    padding-bottom: 40px;
+    padding-top: 40px;
+    float: left;
+
+}
+.tournament_photo_container img{
+    width: 65%;
+    height: 65%;
+}
+.tournament_text_container{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    float: left;
+    padding-bottom: 30px;
+
+}
+.tournament_text_container p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: Exninja;
+    transition: all 0.5s ease-in-out;
+}
+.tournament_header{
+    color: rgb(233, 84, 13);
+    text-align: center;
+    font-size: auto;
+    font-family: 'bulletproof';
+}
+
+
+.photo_resize{    
+    transition: transform 0.2s ease-in-out;
+}
+.photo_resize:hover{
+    transform: scale(1.2);
+}
