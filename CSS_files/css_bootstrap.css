@@ -7,7 +7,6 @@
     font-family: 'Exninja';
     src: url("../fonts/Exninja.otf");
 }
-
 body{
     margin-left: 0px;
     margin-right: 0px;
@@ -36,29 +35,46 @@ a, a:visited, a:hover{
     height: 100%;
 }
 .start_img{
-    position: relative;
+    opacity: 100%;
     background-color: black;
     z-index: 1;
     width: 100%;
+    height: 100vh;
     overflow: hidden;
     position: relative;
-    max-height: 840px;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-color: rgb(233, 84, 13);
 }
-.start_img video {
-    position: relative;
-    width: 100%;
-    opacity: 100%;
-    transition: all 0.5s ease-in-out;
+#start_img_video {
+    position: center center;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    opacity: 30%;
 }
 .start_img img{
     width: 100%;
 }
-.start_img video:hover{
-    opacity: 50%;
+
+.video_overlay{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    opacity: 100%;
+    color: white;
+    text-align: center;
+    font-size: 4vmax;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 200px;
 }
+.video_overlay img{
+    width: 30%;
+    height: auto;
+}
+
 /* ------------------------------ GALLERY ------------------------------ */
 .gallery_row{
     text-align: center;
@@ -78,20 +94,23 @@ a, a:visited, a:hover{
 .navigation_bar{
     position: absolute;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
-    height: 60px;
-    opacity: 50%;
+    min-height: 50px;
+    opacity: 70%;
     background-color: black;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(233, 84, 13);
+    padding: 5px 25px 5px 25px;
 }
 
 .nav_bar_option{
     height: 100%;
-    width: 19.5%;
+    width: 24.5%;
     float: left;
-
     vertical-align: middle;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
     font-family: 'bulletproof';
     font-size: 30px;
@@ -111,10 +130,6 @@ a, a:visited, a:hover{
     left: 0;
     top: 0;
     z-index: 100;
-    opacity: 100%;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: rgb(233, 84, 13);
 }
 
 /* ------------------------------ DIVIDING BARS ------------------------------ */
@@ -195,6 +210,54 @@ a, a:visited, a:hover{
     border-color: rgb(233, 84, 13);
     background-color: black;
     background-image: url("../images/background/background1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#partnership_divider{
+    min-height: 198px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/gallery/IMG_5857.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#golden_divider{
+    min-height: 36px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color:rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/background/gold_partners.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#silver_divider{
+    min-height: 36px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color:rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/background/silver_partners.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bronze_divider{
+    min-height: 36px;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color:rgb(233, 84, 13);
+    background-color: black;
+    background-image: url("../images/background/bronze_partners.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,11 +380,30 @@ a, a:visited, a:hover{
 .black_content_container img:hover{
     opacity: 1;
 }
+/* ------------------------------ PARTNERSHIP CONTAINERS ------------------------------ */
+.partnership_container{
+    opacity: 90%;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.partnership_container img{
+    height: auto;
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+}
+.partnership_container img:hover{
+    transform: scale(1.1);
+}
+
 
 
 /* ------------------------------ STATS ------------------------------ */
 .stats_wrapper{
     background-color: black;
+    overflow: hidden; 
+
 }
 
 .stats_container{
@@ -414,7 +496,8 @@ a, a:visited, a:hover{
     font-family: 'bulletproof';
 }
 
-.photo_resize{    
+.photo_resize{   
+    overflow: hidden; 
     transition: transform 0.2s ease-in-out;
 }
 .photo_resize:hover{
@@ -430,6 +513,13 @@ a, a:visited, a:hover{
 }
 .bg_tournament{
     background-image: url("../images/gallery/IMG_6136-1.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg_partnership{
+    background-image: url("../images/gallery/IMG_5857.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
