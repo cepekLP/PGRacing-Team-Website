@@ -43,19 +43,41 @@ a, a:visited, a:hover{
     overflow: hidden;
     position: relative;
     max-height: 840px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(233, 84, 13);
 }
 .start_img video {
     position: relative;
     width: 100%;
+    opacity: 100%;
+    transition: all 0.5s ease-in-out;
 }
 .start_img img{
     width: 100%;
+}
+.start_img video:hover{
+    opacity: 50%;
+}
+/* ------------------------------ GALLERY ------------------------------ */
+.gallery_row{
+    text-align: center;
+    width: 100%;
+    max-height: 300px;
+    background-color: black;
+}
+.gallery_row img{
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+
 }
 
 
 /* ------------------------------ NAV BAR ------------------------------ */
 .navigation_bar{
     position: absolute;
+    overflow: hidden;
     z-index: 2;
     width: 100%;
     height: 60px;
@@ -89,9 +111,13 @@ a, a:visited, a:hover{
     left: 0;
     top: 0;
     z-index: 100;
+    opacity: 100%;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(233, 84, 13);
 }
 
-/* ------------------------------ DIVIDING BAR ------------------------------ */
+/* ------------------------------ DIVIDING BARS ------------------------------ */
 .dividing_bar{
     float: left;
     background-color: black;
@@ -121,11 +147,38 @@ a, a:visited, a:hover{
     width: auto;
     opacity: 1;
 }
+.black_stripe_diver{
+    padding-top: 30px;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+    text-align: center;
+    font-size: 5vmax;
+    background-color: black;
+    width: 100%;
+    min-height: 60px;
+    opacity: 90%;
+}
+.white_box{
+    padding-right: 20%;
+    padding-left: 20%;
+    color: black;
+    text-align: center;
+    font-size: 3vmax;
+    background-color: white;
+    width: 100%;
+    min-height: 60px;
+}
+
+.white_box img{
+    height: 60px;
+    width: 60px;
+}
 
 #maserati_divider{
     min-height: 398px;
     border-style: solid;
-    border-width: 2px 0px 0px 0px;
+    border-width: 2px 0px 2px 0px;
     border-color: rgb(233, 84, 13);
     background-color: black;
     background-image: url("../images/gallery/IMG_6136-1.JPG");
@@ -138,7 +191,7 @@ a, a:visited, a:hover{
 #pg_pit_divider{
     min-height: 298px;
     border-style: solid;
-    border-width: 2px 0px 0px 0px;
+    border-width: 2px 0px 2px 0px;
     border-color: rgb(233, 84, 13);
     background-color: black;
     background-image: url("../images/background/background1.jpg");
@@ -151,7 +204,6 @@ a, a:visited, a:hover{
 /* ------------------------------ CONTACT ------------------------------ */
 .contact_person{
     text-align: center;
-    font-family: 'bulletproof';
     color: white;
     font-size: 25px;
     padding-top: 25px;
@@ -169,7 +221,8 @@ a, a:visited, a:hover{
     width: 230px;
 }
 .text-cover{
-    opacity: 20%;
+    padding-top: 10px;
+    opacity: 90%;
 	transition: all 0.5s ease-in-out;
 }
 .contact_person:hover .text-cover{
@@ -177,37 +230,39 @@ a, a:visited, a:hover{
     color: rgb(233, 84, 13);
     visibility: visible;
 }
-.contact_container{
-    min-height: 500px;
-    background-color: black;
-    background-image: url("../images/gallery/bolid_1.jpg");
+.contact_wrapper{
+    background-image: url("../images/background/background1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.contact_container{
+    background-color: black;
+    opacity: 90%;
+    width: 100%;
+    height: 100%;
+}
 /* ------------------------------ BIG HEADERS ------------------------------ */
 .big_black_header_container{
+    opacity: 90%;
     background-color: black;
     text-align: left;
-    padding-top: 58px;
-    border-style: solid;
-    border-width: 2px 0px 0px 0px;
-    border-color: rgb(233, 84, 13);
 }
 .big_black_header_img{
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+    overflow: hidden;
 }
 .big_black_header_img img{
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 300px;
+    max-height: 300px;
 }
 .big_black_header_container h1{
-    font-size: 40px;
-    color: rgb(233, 84, 13);
-    font-family: 'bulletproof';
+    font-size: 10vmin;
+    color: white;
     padding-left: 30px;
 
 }
@@ -215,33 +270,70 @@ a, a:visited, a:hover{
     border-style: solid;
     border-width: 0px 2px 0px 0px;
     border-color: rgb(233, 84, 13);
+
+}
+
+.orange_left_bar{
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+    border-color: rgb(233, 84, 13);
+
+}
+
+.small_black_header_container{
+    overflow: hidden;
+    opacity: 90%;
+    background-color: black;
+    text-align: right;
+}
+.small_black_header_container h1{
+    font-size: 5vmax;
+    color: rgb(233, 84, 13);
+    font-family: 'bulletproof';
+    padding-right: 30px;
+    padding-left: 30px;
+
 }
 
 
 /* ------------------------------ CONTENT CONTAINERS ------------------------------ */
 .black_content_container{
+    opacity: 90%;
     background-color: black;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
-    font-size: 22px;
+    font-size: 3vmin;
     color: white;
     text-align: left;
 }
+.black_content_container p {
+    padding: 5px 5px 5px 5px;
+}
+.black_content_container img{
+    opacity: 1 !important;
+    height: auto;
+    width: 95%;
+}
+.black_content_container img:hover{
+    opacity: 1;
+}
+
 
 /* ------------------------------ STATS ------------------------------ */
+.stats_wrapper{
+    background-color: black;
+}
+
 .stats_container{
     min-height: 300px;
     background-color: black;
     text-align: center;
     color: white;
     border-style: solid;
+    opacity: 90%;
     border-width: 2px 0px 2px 0px;
     border-color: rgb(233, 84, 13);
-    background-image: url("../images/background/carbon_background.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .num_of_bolids{
@@ -273,10 +365,15 @@ a, a:visited, a:hover{
 
 /* ------------------------------ TOURNAMENT ------------------------------ */
 .tournament_container{
-    opacity: 1;
+    opacity: 100%;
     min-height: 600px;
-    background-color: white;
+    background-image: url("../images/gallery/IMG_6136-1.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
     text-align: center;
+    color: white;
 }
 
 .tournament_photo_container{
@@ -295,7 +392,7 @@ a, a:visited, a:hover{
     width: 100%;
     padding-top: 10px;
     float: left;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 
 }
 .tournament_text_container p{
@@ -305,7 +402,7 @@ a, a:visited, a:hover{
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 25px;
     font-family: Exninja;
     transition: all 0.5s ease-in-out;
@@ -322,4 +419,19 @@ a, a:visited, a:hover{
 }
 .photo_resize:hover{
     transform: scale(1.2);
+}
+
+.bg{
+    background-image: url("../images/gallery/bolid_1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg_tournament{
+    background-image: url("../images/gallery/IMG_6136-1.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
